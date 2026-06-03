@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.contenido-principal {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.barra-navegacion {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  color: #0056b3;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.enlaces-nav {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.enlaces-nav a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.enlaces-nav a:hover {
+  color: #0056b3;
+}
+
+.enlaces-nav a.activo {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+.perfil-doctor {
+  margin-bottom: 3rem;
+}
+
+.tarjeta-perfil {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.info-perfil {
+  flex: 1;
+}
+
+.nombre-doc {
+  color: #0a2540;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.especialidad-doc {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#descripcion-doc {
+  color: #555555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.btn-cita {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cita:hover {
+  background-color: #003d80;
+  transform: translateY(-2px);
+}
+
+.seccion-comentarios {
+  margin-top: 2rem;
+}
+
+.titulo-seccion {
+  color: #0a2540;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.titulo-seccion::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+.contenedor-comentarios {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.tarjeta-paciente {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.encabezado-tarjeta {
+  margin-bottom: 1rem;
+}
+
+.encabezado-tarjeta h4 {
+  color: #222222;
+  font-size: 1.05rem;
+}
+
+.fecha-consulta {
+  font-size: 0.8rem;
+  color: #999999;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.comentario-paciente {
+  color: #444444;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .contenedor-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tarjeta-perfil {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  #descripcion-doc {
+    text-align: center;
+  }
+
+  .contenedor-comentarios {
+    flex-direction: column;
+  }
+}

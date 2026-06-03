@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor, completa este formulario con la información requerida</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Ingresa tu nombre: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Ingresa tus apellidos: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Ingresa tu correo electrónico: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Crea una contraseña nueva: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Tipo de cuenta (requerido)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Empresarial</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Sube una foto de perfil: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Ingresa tu edad (años): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">¿Cómo te enteraste de nosotros?
+          <select id="referrer" name="referrer">
+            <option value="">(selecciona una opción)</option>
+            <option value="1">Noticias de freeCodeCamp</option>
+            <option value="2">Canal de YouTube de freeCodeCamp</option>
+            <option value="3">Foro de freeCodeCamp</option>
+            <option value="4">Otro</option>
+          </select>
+        </label>
+        <label for="bio">Escribe una breve biografía:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Me gusta programar en la playa..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">términos y condiciones</a>
+      </label>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
