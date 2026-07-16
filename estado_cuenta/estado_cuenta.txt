@@ -1,0 +1,13 @@
+ESTADO DE CUENTA
+================
+
+Transacciones:
+ID: 1 - Compra en supermercado - $45,000.00
+ID: 2 - Pago de suscripcion streaming - $8,500.00
+ID: 3 - Compra en tienda de ropa - $32,000.00
+ID: 4 - Pago de restaurante - $21,500.00
+
+Monto de contado: $107,000.00
+Monto con interes (2.6%): $109,782.00
+Cash back (0.1%): $107.00
+Monto final a pagar: $109,675.00
