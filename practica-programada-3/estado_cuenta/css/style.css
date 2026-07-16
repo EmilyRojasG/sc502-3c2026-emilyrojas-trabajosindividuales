@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+}
+
+.estado-container {
+    min-height: 100vh;
+}
+
+.toolbar {
+    background: linear-gradient(135deg, #0f9b8e, #1e5f74, #133a5e);
+    padding: 20px 25px;
+    color: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.toolbar h1 {
+    color: #ffffff;
+}
+
+.card-custom {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.card-custom h2 {
+    color: #133a5e;
+    border-bottom: 2px solid #0f9b8e;
+    padding-bottom: 10px;
+}
+
+.table thead {
+    background-color: #133a5e;
+    color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f4f7;
+}
+
+.card-custom p {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.card-custom p:last-child {
+    border-bottom: none;
+    font-size: 18px;
+    color: #0f9b8e;
+}
+
+@media (max-width: 480px) {
+    .toolbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: #133a5e;
+    color: #ffffff;
+    margin-top: 40px;
+}
